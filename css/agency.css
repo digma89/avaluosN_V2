@@ -28,13 +28,13 @@ a.active {
   outline: none;
 }
 a {
-  color: #fed136;
+  color: rgb(64,75,131);
 }
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #fec503;
+  color: rgb(64,75,131);
 }
 h1,
 h2,
@@ -325,7 +325,7 @@ section h3.section-subheading {
   margin: 0 0 15px;
   right: 0;
 }
-#servicios .portfolio-item .portfolio-link {
+/*#servicios .portfolio-item .portfolio-link {
   display: block;
   position: relative;
   max-width: 400px;
@@ -360,7 +360,7 @@ section h3.section-subheading {
 #servicios .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
 #servicios .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
   margin: 0;
-}
+}*/
 #servicios .portfolio-item .portfolio-caption {
   max-width: 400px;
   margin: 0 auto;
@@ -387,7 +387,7 @@ section h3.section-subheading {
     margin: 0 0 30px;
   }
 }
-.timeline {
+/*.timeline {
   list-style: none;
   padding: 0;
   position: relative;
@@ -573,6 +573,7 @@ section h3.section-subheading {
 aside.clients img {
   margin: 50px auto;
 }
+*/
 section#contact {
   background-color: #222222;
   background-image: url('../img/map-image.png');
@@ -673,6 +674,7 @@ ul.social-buttons li a:active {
 .btn:active:focus {
   outline: none;
 }
+/*
 .portfolio-modal .modal-dialog {
   margin: 0;
   height: 100%;
@@ -727,9 +729,9 @@ ul.social-buttons li a:active {
   background-color: #222222;
   transform: rotate(45deg);
   -ms-transform: rotate(45deg);
-  /* IE 9 */
+
   -webkit-transform: rotate(45deg);
-  /* Safari and Chrome */
+
   z-index: 1051;
 }
 .portfolio-modal .close-modal .lr .rl {
@@ -738,15 +740,18 @@ ul.social-buttons li a:active {
   background-color: #222222;
   transform: rotate(90deg);
   -ms-transform: rotate(90deg);
-  /* IE 9 */
+
   -webkit-transform: rotate(90deg);
-  /* Safari and Chrome */
+
   z-index: 1052;
 }
 .portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;
 }
+*/
+
+
 ::-moz-selection {
   text-shadow: none;
   background:  rgb(211,217,231);
