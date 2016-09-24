@@ -31,6 +31,8 @@ exports.sendMail = function(req, res) {
         console.log('Message sent: ' + info.response);
     });
 
-    //res.json(data);
+    res.render('index', {
+        title: "Naufal Avalúos"
+    });
 
 };
