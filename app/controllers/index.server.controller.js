@@ -10,7 +10,8 @@ exports.render = function(req, res) {
     var data = req.body
     var mailOptions = {
         from: data.inputName,
-        to: 'conaufal@yahoo.com.mx',
+        //to: 'conaufal@yahoo.com.mx',
+        to: 'digma89@hotmail.com',
         subject: 'Mensaje de ' + data.inputName + ' Asunto: ' + data.inputSubject,
         text: 'Mensaje de ' + data.inputName + '\n Asunto: ' + data.inputSubject + '\n Email: ' + data.inputEmail + '\n Mensaje: ' + data.inputMessage
     };
