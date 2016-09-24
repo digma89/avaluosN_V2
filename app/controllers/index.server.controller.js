@@ -31,6 +31,6 @@ exports.sendMail = function(req, res) {
         console.log('Message sent: ' + info.response);
     });
 
-    res.json(data);
+    //res.json(data);
 
 };
