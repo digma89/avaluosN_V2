@@ -1,5 +1,5 @@
 var nodemailer = require('nodemailer');
-var transporter = nodemailer.createTransport('smtps://corporativonaufal%40gmail.com:naufalavaluos1984@smtp.gmail.com');
+var transporter = nodemailer.createTransport('smtps://corporativonaufal%40gmail.com:naufal/avaluos1984@smtp.gmail.com');
 
 
 exports.render = function(req, res) {
@@ -31,8 +31,6 @@ exports.sendMail = function(req, res) {
         console.log('Message sent: ' + info.response);
     });
 
-    res.render('index', {
-        title: "Naufal Avalúos"
-    });
+
 
 };
