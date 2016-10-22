@@ -18,7 +18,7 @@ exports.sendMail = function(req, res) {
     var auth = {
         auth: {
             api_key: 'key-b2d52c4ec4e4f669aa319ba1b357ec11',
-            domain: 'postmaster@sandbox7c03b0486de94c0299782e6f4b4563bf.mailgun.org'
+            domain: 'sandbox7c03b0486de94c0299782e6f4b4563bf.mailgun.org'
         }
     }
     var transporter = nodemailer.createTransport(mg(auth));
