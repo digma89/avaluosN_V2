@@ -717,6 +717,12 @@ ul.social-buttons li a:active {
   outline: none;
 }
 
+#respuestaAEnvio{
+  margin-top: 50px;
+  max-width: 50%;
+  
+}
+
 ::-moz-selection {
   text-shadow: none;
   background:  rgb(211,217,231);
