@@ -1,6 +1,6 @@
 exports.render = function(req, res) {
     res.render('index', {
-        title: "Naufal Avalúos"
+        title: "Avalúos Corporativo Naufal"
     });
 };
 
@@ -28,7 +28,7 @@ exports.sendMail = function(req, res) {
     var mailOptions = {
         from: "coNaufalWEB@naufal.mx",
         to: 'digma89@hotmail.com',
-        subject: 'Mensaje de ' + data.inputName + ' Asunto: ' + data.inputSubject,
+        subject: 'Mensaje de: ' + data.inputName + ' Asunto: ' + data.inputSubject,
         text: 'Mensaje de ' + data.inputName + '\n Asunto: ' + data.inputSubject + '\n Email: ' + data.inputEmail + '\n Mensaje: ' + data.inputMessage
     };
 
