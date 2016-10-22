@@ -11,19 +11,22 @@ exports.render = function(req, res) {
  * Send an email when the contact from is submitted
  */
 exports.sendMail = function(req, res) {
+
     var nodemailer = require('nodemailer');
-    //var transporter = nodemailer.createTransport('smtps://corporativonaufal%40gmail.com:naufal/avaluos1984@smtp.gmail.com');
-    var transporter = nodemailer.createTransport({
-        host: 'smtp.gmail.com',
-        port: 465,
-        auth: { user: 'corporativonaufal@gmail.com', pass: 'naufal/avaluos1984' },
-        secure: true
-    });
+    var mg = require('nodemailer-mailgun-transport');
+    // This is your API key that you retrieve from www.mailgun.com/cp (free up to 10K monthly emails)
+    var auth = {
+        auth: {
+            api_key: 'key-b2d52c4ec4e4f669aa319ba1b357ec11',
+            domain: 'postmaster@sandbox7c03b0486de94c0299782e6f4b4563bf.mailgun.org'
+        }
+    }
+    var transporter = nodemailer.createTransport(mg(auth));
 
     var data = req.body;
 
     var mailOptions = {
-        from: data.inputName,
+        from: "coNaufalWEB@naufal.mx",
         to: 'digma89@hotmail.com',
         subject: 'Mensaje de ' + data.inputName + ' Asunto: ' + data.inputSubject,
         text: 'Mensaje de ' + data.inputName + '\n Asunto: ' + data.inputSubject + '\n Email: ' + data.inputEmail + '\n Mensaje: ' + data.inputMessage
@@ -38,7 +41,4 @@ exports.sendMail = function(req, res) {
         }
 
     });
-
-
-
 };
