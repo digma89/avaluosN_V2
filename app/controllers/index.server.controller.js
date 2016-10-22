@@ -17,8 +17,8 @@ exports.sendMail = function(req, res) {
     // This is your API key that you retrieve from www.mailgun.com/cp (free up to 10K monthly emails)
     var auth = {
         auth: {
-            api_key: 'key-b2d52c4ec4e4f669aa319ba1b357ec11',
-            domain: 'sandbox7c03b0486de94c0299782e6f4b4563bf.mailgun.org'
+            api_key: 'key-14d1d7873cbd3e5bee23204477bb847a',
+            domain: 'sandbox5f5af0e452bc4faab2338c2266357b18.mailgun.org'
         }
     }
     var transporter = nodemailer.createTransport(mg(auth));
@@ -26,8 +26,8 @@ exports.sendMail = function(req, res) {
     var data = req.body;
 
     var mailOptions = {
-        from: "coNaufalWEB@naufal.mx",
-        to: 'digma89@hotmail.com',
+        from: "conaufalWEB@naufal.mx",
+        to: 'conaufal@yahoo.com.mx',
         subject: 'Mensaje de: ' + data.inputName + ' Asunto: ' + data.inputSubject,
         text: 'Mensaje de ' + data.inputName + '\n Asunto: ' + data.inputSubject + '\n Email: ' + data.inputEmail + '\n Mensaje: ' + data.inputMessage
     };
